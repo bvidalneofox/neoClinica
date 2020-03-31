@@ -1,0 +1,12 @@
+p {
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .scroll {
+    max-height: 525px;
+    overflow-y: auto;
+}

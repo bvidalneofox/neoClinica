@@ -1,0 +1,58 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { AuthMasterComponent } from './auth/auth-master/auth-master.component';
+import { PublicMasterComponent } from './public/public-master/public-master.component';
+import { LoginComponent } from './public/login/login.component';
+import { InicioComponent } from './auth/inicio/inicio.component';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { AuthInterceptorService } from './servicios/auth-interceptor.service';
+import { JWT_OPTIONS, JwtHelperService } from '@auth0/angular-jwt';
+import { NavbarComponent } from './auth/layouts/navbar/navbar.component';
+import { ResetPasswordComponent } from './public/reset-password/reset-password.component';
+import { NuevaPasswordComponent } from './public/nueva-password/nueva-password.component';
+import { PerfilPacienteComponent } from './auth/perfil-paciente/perfil-paciente.component';
+import { AtencionesPacienteComponent } from './auth/pacientes/atenciones-paciente/atenciones-paciente.component';
+import { HospitalizacionesPacienteComponent } from './auth/pacientes/hospitalizaciones-paciente/hospitalizaciones-paciente.component';
+import { MedicionesPacienteComponent } from './auth/pacientes/mediciones-paciente/mediciones-paciente.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    AuthMasterComponent,
+    PublicMasterComponent,
+    LoginComponent,
+    InicioComponent,
+    NavbarComponent,
+    ResetPasswordComponent,
+    NuevaPasswordComponent,
+    PerfilPacienteComponent,
+    AtencionesPacienteComponent,
+    HospitalizacionesPacienteComponent,
+    MedicionesPacienteComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    HttpClientModule,
+  ],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptorService,
+      multi: true
+    },
+    { provide: JWT_OPTIONS, useValue: JWT_OPTIONS },
+    JwtHelperService
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

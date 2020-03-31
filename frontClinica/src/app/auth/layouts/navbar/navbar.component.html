@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <button class="sidebarButton btn" (click)="abrirSidebar()"><i class="fas fa-bars"></i></button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <input id="typeahead-basic" type="text" class="form-control  ml-4 w-50" (selectItem)="test($event)" placeholder="Buscar Paciente" [(ngModel)]="model"
+      [ngbTypeahead]="search"
+      [inputFormatter]="formatter"
+      [resultFormatter]="formatter"
+      [editable]='false' />
+  
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user fa-lg"></i> {{nombreUser}}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="../Inicio/miPerfil">Ver Mis Datos</a>
+            <a class="dropdown-item" routerLink="../Inicio/configuracion">Configuración</a>
+            <a class="dropdown-item" (click)="logout()">Cerrar Sesión</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>

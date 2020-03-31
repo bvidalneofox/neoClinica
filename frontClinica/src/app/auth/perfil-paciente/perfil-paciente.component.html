@@ -1,0 +1,108 @@
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="https://uybor.uz/borless/uybor/img/user-images/user_no_photo_300x300.png"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h4 class="font-weight-bold">Bryan Vidal Diaz</h4>
+                            <p><b>Ficha Paciente </b>N°65</p>
+                            <p><b>Edad </b>24 años 6 meses 7 días</p>
+                            <p><b>Rut </b>18.522.783-9</p>
+                            <p><b>Dirección </b>Villa Todos los Santos, Pje. Sta. Ana #336, Los Ángeles</p>
+                            <p><b>Contacto </b>+569 7850 4418</p>
+                            <p><b>Alergias </b>Panadol y Aspirina</p>
+                        </div>
+                    </div>
+                    <div class="card card-button mt-2 h5">
+                        <div class="card-body text-center">
+                            <p><i class="fas fa-hand-holding-medical"></i> Nueva Atención</p>
+                        </div>
+                    </div>
+                    <div class="card card-button mt-2 h5">
+                        <div class="card-body text-center">
+                            <p><i class="fas fa-file-medical"></i> Solicitar Examen</p>
+                        </div>
+                    </div>
+                    <div class="card card-button mt-2 h5">
+                        <div class="card-body text-center">
+                            <p><i class="fas fa-calendar-plus"></i> Agendar Cita</p>
+                        </div>
+                    </div>
+                    <div class="card card-button mt-2 h5">
+                        <div class="card-body text-center">
+                            <p><i class="fas fa-image"></i> Adjuntar Imagen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <ngb-tabset [destroyOnHide]="false">
+                <ngb-tab title="Atenciones">
+                    <ng-template ngbTabContent>
+                        <div class="card scroll shadow" style="border-top: none;">
+                            <div class="card-body">
+                                <app-atenciones-paciente></app-atenciones-paciente>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab title="Hospitalizaciones">
+                    <ng-template ngbTabContent>
+                        <div class="card scroll shadow" style="border-top: none;">
+                            <div class="card-body">
+                                <app-hospitalizaciones-paciente></app-hospitalizaciones-paciente>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab title="Mediciones">
+                    <ng-template ngbTabContent>
+                        <div class="card scroll shadow" style="border-top: none;">
+                            <div class="card-body">
+                                <app-mediciones-paciente></app-mediciones-paciente>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab title="Examenes">
+                    <ng-template ngbTabContent>
+                        <div class="card scroll shadow" style="border-top: none;">
+                            <div class="card-body">
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                                    stumptown aliqua, retro synth
+                                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+                                    Reprehenderit butcher retro keffiyeh
+                                    dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                                    Aliquip placeat salvia cillum
+                                    iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                                </p>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab title="Recetas">
+                    <ng-template ngbTabContent>
+                        <div class="card scroll shadow" style="border-top: none;">
+                            <div class="card-body">
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                                    stumptown aliqua, retro synth
+                                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+                                    Reprehenderit butcher retro keffiyeh
+                                    dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                                    Aliquip placeat salvia cillum
+                                    iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                                </p>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ngb-tab>
+            </ngb-tabset>
+        </div>
+    </div>
+</div>

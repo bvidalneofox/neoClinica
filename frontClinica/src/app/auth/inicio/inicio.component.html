@@ -1,0 +1,61 @@
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h5><i class="fas fa-user-clock"></i> Pacientes en Espera de Evaluación</h5>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Paciente</th>
+                                <th scope="col">Rut</th>
+                                <th scope="col">Hora de Llegada</th>
+                                <th scope="col">Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let country of countries; index as i">
+                                <th scope="row">{{ i + 1 }}</th>
+                                <td>{{ country.name }}</td>
+                                <td>{{ country.flag}}</td>
+                                <td>{{ country.area}}</td>
+                                <td><button class="btn btn-primary">Atender</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-body">
+            <h5><i class="fas fa-user-md"></i> Pacientes en Espera de Atención Medica</h5>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Paciente</th>
+                                <th scope="col">Rut</th>
+                                <th scope="col">Hora de Llegada</th>
+                                <th scope="col">Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let country of countries; index as i">
+                                <th scope="row">{{ i + 1 }}</th>
+                                <td>{{ country.name }}</td>
+                                <td>{{ country.flag}}</td>
+                                <td>{{ country.area}}</td>
+                                <td><button class="btn btn-primary">Atender</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
