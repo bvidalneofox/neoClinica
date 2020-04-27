@@ -28,13 +28,13 @@
   }
   
   #sidebar .sidebar-header {
-    padding: 8px;
+    padding: 10px;
     border-bottom: 1px solid #47748b;
   }
   
   #sidebar ul.components {
     padding: 20px;
-    border-bottom: 1px solid #47748b;
+    /* border-bottom: 1px solid #47748b; */
   }
   
   /* TEXTO PRECIO A SECCIONES */

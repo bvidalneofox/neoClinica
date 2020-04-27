@@ -1,0 +1,47 @@
+    <ngb-tabset [destroyOnHide]="false">
+        <ngb-tab title="Atenciones">
+            <ng-template ngbTabContent>
+                <div class="card scroll shadow" style="border-top: none;">
+                    <div class="card-body">
+                        <app-atenciones-paciente></app-atenciones-paciente>
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Hospitalizaciones">
+            <ng-template ngbTabContent>
+                <div class="card scroll shadow" style="border-top: none;">
+                    <div class="card-body">
+                        <app-hospitalizaciones-paciente></app-hospitalizaciones-paciente>
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Mediciones">
+            <ng-template ngbTabContent>
+                <div class="card scroll shadow" style="border-top: none;">
+                    <div class="card-body">
+                        <app-mediciones-paciente></app-mediciones-paciente>
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Examenes">
+            <ng-template ngbTabContent>
+                <div class="card scroll shadow" style="border-top: none;">
+                    <div class="card-body">
+                        <app-examenes-paciente></app-examenes-paciente>
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Recetas">
+            <ng-template ngbTabContent>
+                <div class="card scroll shadow" style="border-top: none;">
+                    <div class="card-body">
+                        <app-recetas-paciente></app-recetas-paciente>
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-tab>
+    </ngb-tabset>

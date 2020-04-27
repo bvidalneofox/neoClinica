@@ -8,6 +8,15 @@ import { InicioComponent } from './auth/inicio/inicio.component';
 import { ResetPasswordComponent } from './public/reset-password/reset-password.component';
 import { NuevaPasswordComponent } from './public/nueva-password/nueva-password.component';
 import { PerfilPacienteComponent } from './auth/perfil-paciente/perfil-paciente.component';
+import { RegistrarPacienteComponent } from './auth/pacientes/registrar-paciente/registrar-paciente.component';
+import { DashboardComponent } from './auth/dashboard/dashboard.component';
+import { ListaPacientesComponent } from './auth/pacientes/lista-pacientes/lista-pacientes.component';
+import { ListaMedicosComponent } from './auth/medicos/lista-medicos/lista-medicos.component';
+import { RegistrarMedicoComponent } from './auth/medicos/registrar-medico/registrar-medico.component';
+import { NuevaAtencionComponent } from './auth/pacientes/nueva-atencion/nueva-atencion.component';
+import { CarpetaPacienteComponent } from './auth/pacientes/carpeta-paciente/carpeta-paciente.component';
+import { FormularioAtencionComponent } from './auth/pacientes/formulario-atencion/formulario-atencion.component';
+import { FormularioHospitalizacionComponent } from './auth/pacientes/formulario-hospitalizacion/formulario-hospitalizacion.component';
 
 
 const routes: Routes = [
@@ -26,7 +35,19 @@ const routes: Routes = [
     path: 'Inicio', component: AuthMasterComponent, canActivate: [GuardianService], children:
       [
         { path: '', component: InicioComponent },
-        { path: 'Perfil', component: PerfilPacienteComponent}
+        { path: 'Perfil', component: PerfilPacienteComponent, children:
+          [
+            { path: '', component: CarpetaPacienteComponent },
+            { path: 'NuevaAtencion', component: NuevaAtencionComponent },
+            { path: 'FormularioAtencion', component: FormularioAtencionComponent },
+            { path: 'FormularioHospitalizacion', component: FormularioHospitalizacionComponent }
+          ] 
+        },
+        { path: 'NuevoPaciente', component: RegistrarPacienteComponent },
+        { path: 'Dashboard', component: DashboardComponent },
+        { path: 'ListaPacientes', component: ListaPacientesComponent },
+        { path: 'ListaMedicos', component: ListaMedicosComponent },
+        { path: 'NuevoMedico', component:RegistrarMedicoComponent }
       ]
   }
 ];

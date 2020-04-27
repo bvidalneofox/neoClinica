@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,17 @@ import { PerfilPacienteComponent } from './auth/perfil-paciente/perfil-paciente.
 import { AtencionesPacienteComponent } from './auth/pacientes/atenciones-paciente/atenciones-paciente.component';
 import { HospitalizacionesPacienteComponent } from './auth/pacientes/hospitalizaciones-paciente/hospitalizaciones-paciente.component';
 import { MedicionesPacienteComponent } from './auth/pacientes/mediciones-paciente/mediciones-paciente.component';
+import { ExamenesPacienteComponent } from './auth/pacientes/examenes-paciente/examenes-paciente.component';
+import { RecetasPacienteComponent } from './auth/pacientes/recetas-paciente/recetas-paciente.component';
+import { RegistrarPacienteComponent } from './auth/pacientes/registrar-paciente/registrar-paciente.component';
+import { DashboardComponent } from './auth/dashboard/dashboard.component';
+import { ListaPacientesComponent } from './auth/pacientes/lista-pacientes/lista-pacientes.component';
+import { ListaMedicosComponent } from './auth/medicos/lista-medicos/lista-medicos.component';
+import { RegistrarMedicoComponent } from './auth/medicos/registrar-medico/registrar-medico.component';
+import { NuevaAtencionComponent } from './auth/pacientes/nueva-atencion/nueva-atencion.component';
+import { CarpetaPacienteComponent } from './auth/pacientes/carpeta-paciente/carpeta-paciente.component';
+import { FormularioAtencionComponent } from './auth/pacientes/formulario-atencion/formulario-atencion.component';
+import { FormularioHospitalizacionComponent } from './auth/pacientes/formulario-hospitalizacion/formulario-hospitalizacion.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +46,17 @@ import { MedicionesPacienteComponent } from './auth/pacientes/mediciones-pacient
     AtencionesPacienteComponent,
     HospitalizacionesPacienteComponent,
     MedicionesPacienteComponent,
+    ExamenesPacienteComponent,
+    RecetasPacienteComponent,
+    RegistrarPacienteComponent,
+    DashboardComponent,
+    ListaPacientesComponent,
+    ListaMedicosComponent,
+    RegistrarMedicoComponent,
+    NuevaAtencionComponent,
+    CarpetaPacienteComponent,
+    FormularioAtencionComponent,
+    FormularioHospitalizacionComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +66,7 @@ import { MedicionesPacienteComponent } from './auth/pacientes/mediciones-pacient
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
+    ChartsModule
   ],
   providers: [
     {

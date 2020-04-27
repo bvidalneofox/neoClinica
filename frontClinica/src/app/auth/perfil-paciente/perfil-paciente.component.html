@@ -1,6 +1,6 @@
-<div class="container mt-2">
+<div class="container-fluid mt-2">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" style="margin-top: 2.6rem;">
             <div class="card shadow">
                 <div class="card-body">
                     <div class="row">
@@ -18,7 +18,7 @@
                             <p><b>Alergias </b>Panadol y Aspirina</p>
                         </div>
                     </div>
-                    <div class="card card-button mt-2 h5">
+                    <div class="card card-button mt-4 h5" routerLink="NuevaAtencion">
                         <div class="card-body text-center">
                             <p><i class="fas fa-hand-holding-medical"></i> Nueva Atención</p>
                         </div>
@@ -33,76 +33,11 @@
                             <p><i class="fas fa-calendar-plus"></i> Agendar Cita</p>
                         </div>
                     </div>
-                    <div class="card card-button mt-2 h5">
-                        <div class="card-body text-center">
-                            <p><i class="fas fa-image"></i> Adjuntar Imagen</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
         <div class="col-8">
-            <ngb-tabset [destroyOnHide]="false">
-                <ngb-tab title="Atenciones">
-                    <ng-template ngbTabContent>
-                        <div class="card scroll shadow" style="border-top: none;">
-                            <div class="card-body">
-                                <app-atenciones-paciente></app-atenciones-paciente>
-                            </div>
-                        </div>
-                    </ng-template>
-                </ngb-tab>
-                <ngb-tab title="Hospitalizaciones">
-                    <ng-template ngbTabContent>
-                        <div class="card scroll shadow" style="border-top: none;">
-                            <div class="card-body">
-                                <app-hospitalizaciones-paciente></app-hospitalizaciones-paciente>
-                            </div>
-                        </div>
-                    </ng-template>
-                </ngb-tab>
-                <ngb-tab title="Mediciones">
-                    <ng-template ngbTabContent>
-                        <div class="card scroll shadow" style="border-top: none;">
-                            <div class="card-body">
-                                <app-mediciones-paciente></app-mediciones-paciente>
-                            </div>
-                        </div>
-                    </ng-template>
-                </ngb-tab>
-                <ngb-tab title="Examenes">
-                    <ng-template ngbTabContent>
-                        <div class="card scroll shadow" style="border-top: none;">
-                            <div class="card-body">
-                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-                                    stumptown aliqua, retro synth
-                                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
-                                    Reprehenderit butcher retro keffiyeh
-                                    dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.
-                                    Aliquip placeat salvia cillum
-                                    iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
-                                </p>
-                            </div>
-                        </div>
-                    </ng-template>
-                </ngb-tab>
-                <ngb-tab title="Recetas">
-                    <ng-template ngbTabContent>
-                        <div class="card scroll shadow" style="border-top: none;">
-                            <div class="card-body">
-                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-                                    stumptown aliqua, retro synth
-                                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
-                                    Reprehenderit butcher retro keffiyeh
-                                    dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.
-                                    Aliquip placeat salvia cillum
-                                    iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
-                                </p>
-                            </div>
-                        </div>
-                    </ng-template>
-                </ngb-tab>
-            </ngb-tabset>
+            <router-outlet></router-outlet>
         </div>
     </div>
 </div>
