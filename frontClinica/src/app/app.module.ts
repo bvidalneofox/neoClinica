@@ -31,6 +31,8 @@ import { NuevaAtencionComponent } from './auth/pacientes/nueva-atencion/nueva-at
 import { CarpetaPacienteComponent } from './auth/pacientes/carpeta-paciente/carpeta-paciente.component';
 import { FormularioAtencionComponent } from './auth/pacientes/formulario-atencion/formulario-atencion.component';
 import { FormularioHospitalizacionComponent } from './auth/pacientes/formulario-hospitalizacion/formulario-hospitalizacion.component';
+import { NuevaRecetaComponent } from './auth/pacientes/nueva-receta/nueva-receta.component';
+import { VerRecetaComponent } from './auth/pacientes/ver-receta/ver-receta.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +59,8 @@ import { FormularioHospitalizacionComponent } from './auth/pacientes/formulario-
     CarpetaPacienteComponent,
     FormularioAtencionComponent,
     FormularioHospitalizacionComponent,
+    NuevaRecetaComponent,
+    VerRecetaComponent,
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,8 @@ import { NuevaAtencionComponent } from './auth/pacientes/nueva-atencion/nueva-at
 import { CarpetaPacienteComponent } from './auth/pacientes/carpeta-paciente/carpeta-paciente.component';
 import { FormularioAtencionComponent } from './auth/pacientes/formulario-atencion/formulario-atencion.component';
 import { FormularioHospitalizacionComponent } from './auth/pacientes/formulario-hospitalizacion/formulario-hospitalizacion.component';
+import { NuevaRecetaComponent } from './auth/pacientes/nueva-receta/nueva-receta.component';
+import { VerRecetaComponent } from './auth/pacientes/ver-receta/ver-receta.component';
 
 
 const routes: Routes = [
@@ -40,7 +42,9 @@ const routes: Routes = [
             { path: '', component: CarpetaPacienteComponent },
             { path: 'NuevaAtencion', component: NuevaAtencionComponent },
             { path: 'FormularioAtencion', component: FormularioAtencionComponent },
-            { path: 'FormularioHospitalizacion', component: FormularioHospitalizacionComponent }
+            { path: 'FormularioHospitalizacion', component: FormularioHospitalizacionComponent },
+            { path: 'NuevaReceta', component: NuevaRecetaComponent },
+            { path: 'VerReceta', component: VerRecetaComponent }
           ] 
         },
         { path: 'NuevoPaciente', component: RegistrarPacienteComponent },
